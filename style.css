@@ -1,0 +1,134 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--dark);
+}
+.main-body{
+    margin: 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+.head h1{
+    color: var(--light);
+    margin-bottom: 1rem;
+    display: flex;
+    margin-left: 0.5rem;
+}
+.form{
+    display: flex;
+    transition: 0.4s;
+}
+.input,.submit{
+    outline: none;
+    border: none;
+    appearance: none;
+    background: none;
+}
+.input{
+    background-color: var(--darker);
+    color: var(--light);
+    padding: 1rem;
+    border-radius: 15px;
+    flex: 1 1 0%;
+    margin-right: 0.5rem;
+}
+.submit{
+    background-image: linear-gradient(to right,var(--pink),var(--purple));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: medium;
+    font-weight: 900;
+}
+.submit:hover{
+    opacity:0.8;
+}
+.task-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: auto;
+}
+.task-body h3{
+    color: var(--gray);
+    /* font-size: ; */
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.each-task{
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    text-align: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    background-color: var(--darkest);
+    border-radius: 10px;
+    transition: 0.4s;
+    height: auto;
+ 
+}
+
+.task-show{
+    flex-basis: 80%;
+    outline: none;
+    border: none;
+    background: none;
+    color: var(--light);
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 550;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.button{
+    display: flex;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.edit,.delete{
+    outline: none;
+    border: none;
+    background: none;
+    appearance: none;
+    /* color: var(--light); */
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: x-small;   
+}
+.delete:hover{
+    opacity: 0.6;
+}
+.edit:hover{
+    opacity: 0.8;
+}
+.edit{
+    background-image: linear-gradient(to right,var(--pink),var(--purple));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.delete{
+    margin-left: 3rem;
+    color: var(--pink);
+}
